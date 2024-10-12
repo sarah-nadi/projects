@@ -6,7 +6,7 @@ var findLocation = document.getElementById("findLocation");
 
 async function findWeather(city){
     var response = await fetch( 
-        `http://api.weatherapi.com/v1/forecast.json?key=2e1e4464979a4f26ba963703241210&q=${city}&days=7`
+        `https://api.weatherapi.com/v1/forecast.json?key=2e1e4464979a4f26ba963703241210&q=${city}&days=7`
     );
     var weatherData =await response.json();
     displayWeatherData(weatherData)
