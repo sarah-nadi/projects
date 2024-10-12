@@ -19,13 +19,13 @@ findWeather ("cairo")
 function displayWeatherData(data){
     var dataArray = data.forecast.forecastday
     console.log(dataArray);
-    var weatherStatu=`<div class="row">`
+    var weatherStatu=`<div class="container"><div class="row">`;
     for (var i =0 ; i< 3 ; i++){
         var date = new Date(dataArray[i].date);
         var weeklyDay = date.toLocaleString("en-uk" , {weekday: "long"});
         if ( i=== 0 ){
             weatherStatu += `
-            <div class="item one col-md-4  ps-4">
+            <div class="item one col-md-4 ps-4">
                         <div class="header  w-100 d-flex justify-content-between pt-2 px-3">
                             <p>${weeklyDay}</p>
                             <p>${dataArray[i].date}</p>
@@ -64,7 +64,7 @@ function displayWeatherData(data){
         else if(i ===1 ){
             weatherStatu += `
             
-             <div class="item two col-md-4 text-center">
+             <div class="item two col-md-4  text-center">
                       <div class="header py-1">
                         <p>${weeklyDay}</p>
                       </div>
@@ -82,7 +82,7 @@ function displayWeatherData(data){
         else if (i===2){
             weatherStatu += `
 
-                                <div class="item three col-md-4 text-center">
+                                <div class="item three col-md-4  text-center">
                       <div class="header py-1">
                         <p>${weeklyDay}</p>
                       </div>
