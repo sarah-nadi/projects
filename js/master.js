@@ -30,13 +30,13 @@ $(".faq-button").on("click",function(){
 
 
 $(document).on("click", ".home", function(){
-    window.location.href = "../index.html";
+    window.location.href = "index.html";
 });
 $(document).on("click", ".contact", function(){
-    window.location.href = "../contact.html";
+    window.location.href = "contact.html";
 });
 $(document).on("click", ".chat", function(){
-    window.location.href = "../chatGPT.html";
+    window.location.href = "chatGPT.html";
 });
 
 
