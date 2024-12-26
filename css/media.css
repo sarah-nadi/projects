@@ -1,0 +1,26 @@
+@media (max-width:768px){
+    .team{
+        .heading h2{
+            font-size: 30px;
+            width:50%;
+            text-align: center;
+            line-height: 50px;
+        }
+    }
+    .first-page{
+        background-size: 400px 90vh;
+        &::after{
+            content:"";
+            background-color: transparent;
+        }
+    }
+    .form{
+        input{
+            margin:10px 0px;
+        }
+        button{
+            margin-top: 20px;
+        }
+    }
+}
+
